@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "publishName": "myApp",
-  "electronVersion": "0.33.3",
+  "publishName": "OS INFO",
   "dependencies": {
     "pretty-bytes": "^4.0.2"
   },
