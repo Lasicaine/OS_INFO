@@ -38,3 +38,6 @@ jspm_packages
 
 # IDE WebStorm directory
 .idea
+
+# Build directory
+distributive
