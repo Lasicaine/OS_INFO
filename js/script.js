@@ -10,6 +10,23 @@ $(function(){
 
     const os = require('os');
     var prettyBytes = require('pretty-bytes');
+    var dictionary = os.networkInterfaces();
+    var callback = function(key, value){
+        $('.stats').append('Network interface: <span>' + key + '</span>' + '</br>');
+
+        value.forEach(function(v) {
+            $('.stats').append('Address: <span>' + v.address + '</span>');
+        });
+    };
+
+
+    function dictionaryForEach(dictionary, callback) {
+        Object.keys(dictionary).forEach(function(key) {
+            var value = dictionary[key];
+            callback(key, value);
+        });
+    }
+
 
     $('.stats').append('Node version: <span>' + versions.node + '</span>');
     $('.stats').append('Electron version: <span>' + versions.electron + '</span>');
@@ -35,4 +52,5 @@ $(function(){
     $('.stats').append('OS uptime: <span>' + os.uptime() + '</span>');
     $('.stats').append('Load Averages: <span>' + os.loadavg()[0] + ', ' + os.loadavg()[1] + ', ' + os.loadavg()[2] + '</span>');
 
+    dictionaryForEach(dictionary, callback);
 });
