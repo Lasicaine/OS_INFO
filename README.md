@@ -1,11 +1,11 @@
-# OS_INFO
-Crossplatform Application for Information about your system. (Build on Electron)
+## OS_INFO
+Crossplatform Application for get Information about your system. (Build on Electron)
 
-# Install
-npm install
+### Install
+    npm install
 
-# Build
-npm run build
+### Build
+    npm run build
 
-# Run
-npm start
+## Run
+    npm start
