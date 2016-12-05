@@ -1,2 +1,11 @@
 # OS_INFO
-Information about your system. (Electron + NodeJS)
+Crossplatform Application for Information about your system. (Build on Electron)
+
+# Install
+npm install
+
+# Build
+npm run build
+
+# Run
+npm start
